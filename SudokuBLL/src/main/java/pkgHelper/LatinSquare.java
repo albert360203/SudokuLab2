@@ -84,6 +84,32 @@ public class LatinSquare {
 		}
 		return hasDuplicates;
 	}
+	
+	
+	
+	public boolean hasDuplicatesIgnoringZero(int[] arr) {
+
+		// TODO: Return 'true' if any element except zero in arr is duplicate
+        int counter  = 0;
+        for(int i : arr)
+        	if(i != 0)
+        		counter++;
+        
+        int[] tmp = new int[counter];
+        int counter2 = 0;
+        for(int i : arr)
+        {
+        	if(i != 0)
+        	{
+        		tmp[counter2] = i;
+        		counter2++;
+        	}
+        }
+        
+		return this.hasDuplicates(tmp);
+	}
+	
+	
 
 	/**
 	 * doesElementExist - pass in one-dimension array and a value, if value exists

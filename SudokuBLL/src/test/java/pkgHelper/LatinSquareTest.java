@@ -31,6 +31,30 @@ public class LatinSquareTest {
 		assertEquals(bHasDuplicates, true);
 
 	}
+	
+	@Test
+	public void hasDuplicatesIgnoringZero_test1() {
+
+		LatinSquare LS = new LatinSquare();
+		int[] arr = { 1, 3, 0, 5, 2, 4, 0 };
+
+		boolean bHasDuplicates = LS.hasDuplicatesIgnoringZero(arr);
+
+		assertEquals(bHasDuplicates, false);
+
+	}
+	
+	@Test
+	public void hasDuplicatesIgnoringZero_test2() {
+
+		LatinSquare LS = new LatinSquare();
+		int[] arr = { 1, 3, 0, 5, 2, 4, 0, 1 };
+
+		boolean bHasDuplicates = LS.hasDuplicatesIgnoringZero(arr);
+
+		assertEquals(bHasDuplicates, true);
+
+	}
 
 	@Test
 	public void doesElementExist_Test1() {
