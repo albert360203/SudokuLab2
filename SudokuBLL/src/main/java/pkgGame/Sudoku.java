@@ -14,18 +14,48 @@ public class Sudoku extends LatinSquare
 	
 //两个constructor都没写好。没有throw	
 	
-	public Sudoku(int size)
+	public Sudoku(int size) throws java.lang.Exception
 	{
 		super();
 		iSize = size;
-		iSqrtSize = (int) Math.sqrt(size);
+		try 
+		{
+			if ((Math.sqrt(iSize) == Math.floor(Math.sqrt(iSize))) && !Double.isInfinite(Math.sqrt(iSize))) 
+			{
+				iSqrtSize = (int) Math.sqrt(iSize);	
+			}
+			else 
+			{
+				Exception e = new Exception();
+				throw e;
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("the iSize given doesn't have a whole number square root");
+		}
 	}
 	
-	public Sudoku(int[][] latinSquare)
+	public Sudoku(int[][] latinSquare) throws java.lang.Exception
 	{
 		super(latinSquare);
 		iSize = latinSquare.length;
-		iSqrtSize = (int) Math.sqrt(iSize);
+		try 
+		{
+			if ((Math.sqrt(iSize) == Math.floor(Math.sqrt(iSize))) && !Double.isInfinite(Math.sqrt(iSize))) 
+			{
+				iSqrtSize = (int) Math.sqrt(iSize);	
+			}
+			else 
+			{
+				Exception e = new Exception();
+				throw e;
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("the iSize given doesn't have a whole number square root");
+		}
 	}
 	
 	protected int[][] getPuzzle()

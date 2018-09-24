@@ -8,7 +8,7 @@ import org.junit.Test;
 public class SudokuTest 
 {
 	@Test
-	public void getRegion_v1_Test1()
+	public void getRegion_v1_Test1() throws Exception
 	{
 		int[][] puzzle = {{5,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -26,7 +26,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void getRegion_v1_Test2()
+	public void getRegion_v1_Test2() throws Exception
 	{
 		int[][] puzzle = {{5,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -44,7 +44,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void getRegion_v2_Test1()
+	public void getRegion_v2_Test1() throws Exception
 	{
 		int[][] puzzle = {{5,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -62,7 +62,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void getRegion_v2_Test2()
+	public void getRegion_v2_Test2() throws Exception
 	{
 		int[][] puzzle = {{5,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -80,7 +80,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isSudoku_Test1()
+	public void isSudoku_Test1() throws Exception
 	{
 		int[][] puzzle = {{5,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -97,7 +97,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isSudoku_Test2()
+	public void isSudoku_Test2() throws Exception
 	{
 		int[][] puzzle = {{3,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -114,7 +114,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isSudoku_Test3()
+	public void isSudoku_Test3() throws Exception
 	{
 		int[][] puzzle = {{1,2,3,4,5,6,7,8,9},
 				          {2,3,4,5,6,7,8,9,1},
@@ -131,7 +131,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isSudoku_Test4()
+	public void isSudoku_Test4() throws Exception
 	{
 		int[][] puzzle = {{5,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -148,7 +148,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isPartialSudoku_Test1()
+	public void isPartialSudoku_Test1() throws Exception
 	{
 		int[][] puzzle = {{5,3,4,6,7,8,9,1,2},
 				          {6,7,2,1,9,5,3,4,8},
@@ -165,7 +165,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isPartialSudoku_Test2()
+	public void isPartialSudoku_Test2() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,7,0,0,0,0},
 				          {6,0,0,1,9,5,0,0,0},
@@ -182,7 +182,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isPartialSudoku_Test3()
+	public void isPartialSudoku_Test3() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,5,0,0,0,0},   // Row0: the number 5 duplicates.
 				          {6,0,0,1,9,5,0,0,0},
@@ -199,7 +199,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isPartialSudoku_Test4()
+	public void isPartialSudoku_Test4() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,7,0,0,0,0},   
 				          {6,0,0,1,9,5,0,0,0},
@@ -216,7 +216,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isPartialSudoku_Test5()
+	public void isPartialSudoku_Test5() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,7,0,0,0,0},
 				          {6,0,0,1,9,5,0,0,0},
@@ -233,7 +233,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isValidValue_Test1()
+	public void isValidValue_Test1() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,7,0,0,0,0},
 						  {6,0,0,1,9,5,0,0,0},
@@ -250,7 +250,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isValidValue_Test2()
+	public void isValidValue_Test2() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,7,0,0,0,0},
 						  {6,0,0,1,9,5,0,0,0},
@@ -267,7 +267,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isValidValue_Test3()
+	public void isValidValue_Test3() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,7,0,0,0,0},
 						  {6,0,0,1,9,5,0,0,0},
@@ -284,7 +284,7 @@ public class SudokuTest
 	}
 	
 	@Test
-	public void isValidValue_Test4()
+	public void isValidValue_Test4() throws Exception
 	{
 		int[][] puzzle = {{5,3,0,0,7,0,0,0,0},
 						  {6,0,0,1,9,5,0,0,0},
