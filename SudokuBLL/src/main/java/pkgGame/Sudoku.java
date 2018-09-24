@@ -14,7 +14,7 @@ public class Sudoku extends LatinSquare
 	
 //两个constructor都没写好。没有throw	
 	
-	public Sudoku(int size) throws java.lang.Exception
+	public Sudoku(int size)
 	{
 		super();
 		iSize = size;
